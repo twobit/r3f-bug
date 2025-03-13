@@ -1,9 +1,12 @@
+import { Portal } from "../components/portal";
 import { Scene } from "../components/scene";
 
 export default function Page() {
   return (
-    <main className="min-h-screen">
-      <Scene />
+    <main id="container" className="min-h-screen">
+      <Portal>
+        <Scene />
+      </Portal>
     </main>
   );
 }
